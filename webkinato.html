@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: yellow;
+            color: rgb(73, 26, 245);
+        }
+        header {
+            background: #e9092e;
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-center: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00adb5;
+        }
+        .hero {
+            background: linear-gradient (blach, rgba(13, 228, 30, 0.7)),
+                        url('https://picsum.photos/1600/800');
+            height: 90vh;
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align:center;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #00adb5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #007b80;
+        }
+        section {
+            padding: 50px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            text-align: right;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project {
+            background: #fff;
+            margin: 15px;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .project img {
+            width: 100%;
+        }
+
+        .project-content {
+            padding: 15px;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact input, 
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background: #00adb5;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact button:hover {
+            background: #007b80;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        @media(max-width: 768px) {
+            header h1, nav {
+                float: none;
+                text-align: center;
+            }
+
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MyPortfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="Home">
+        <div class="container">
+            <h1>Home</h1>
+        <h1>MIZAN-TEPI UNIVERSITY</h1>
+        <h1>SCHOOL OF COMPUTING AND INFORMATICS</h1>
+        <h1>DEPARTMENT OF INFOMATION TECHNOLOGY</h1>
+        <h1>SECTION A</h1>
+        <h1>INDIVIDUAL ASSIGNMENT</h1>
+        <h1>Name Afrano kinato idno 8919/17</h1>
+            <img src="af.png"width="60"height="80"/>
+            <h2>Hello, I'm Afrano</h2>
+            <p>welcome! I am Afrano biadge.Aspiring tech professional || IT student.I am a dedicated IT 
+                student comitted to turning idea into degital reality, Welcome to my personal portfolio
+                where you can explore my work and skills.</p> 
+            </p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    <section id="about me">
+        <div class="container">
+            <h1>about me</h1>
+        <p>I am Afrano,a passionate web developer and student.I enjoy building simple,creative,and user
+            -friendly websites.I am always eager to learn new technologies and improve my skills.
+            my goal is to become a professional developer and create impactful digital solutions.</p>
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-box">MYsql</div>
+                <div class="skill-box">programing c++</div>
+                <div class="skill-box">web developer</div>
+                <div class="skill-box">computer organization and architecture</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+       <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects">
+
+                <div class="project">
+                    <img src="">
+                    <div class="project-content">
+                    </div>
+
+                <div class="project">
+                    <img src="20260412_131544.jpg">
+                     <h3>Project one</h3> 
+                      <h4>Online Learning Platform</h4>
+               <p> A website where users can access courses, watch lessons, and track their learning progress.
+                 It includes user login, video content, quizzes, and progress tracking.
+                  Built using frontend and backend technologies like React and Node.
+                  js or Django.</p>
+               <h3>Project two</h3>
+               <h4> personal portfolio website</h4>
+             <p>A simple website that shows your personal information,skills,and  projects.
+                it includes sections like Home,About ME,SKILLS,AND CONTACT.
+                this project helps demonstrate basic knowledge of HTML and CSS and shows your
+                 ability to design a clean and responsive layout.</p>
+               </p>
+                 <h3>Prpject three</h3>
+                 <h4>student managment system</h4>
+                    <p>A basic system used to store and manage student information such as name,ID,and grades.
+                        it may include features like adding, updating,and deleting student records.
+                        this project shows your understanding of programming logic and data handl
+                    <div class="project-content">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        
+    <section id="contact">
+        <div class="container contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="afrano" required>
+                <input type="email" placeholder="mustasule0916@gmail.com" required>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 My Portfolio Arano</p>
+    </footer>
+
+</body>
+</html>
